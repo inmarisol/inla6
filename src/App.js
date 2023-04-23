@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import { useEffect, useState } from 'react';
+
+
+const URL = "https://random.dog/woof.json";
+
+const getRandomDog = async () => {
+  const response = await fetch(URL);
+  const body = await response.json();
+  return body.url;
+}
+
+
+export const App = () => {
+  const [url, setUrl] = useState(null);
+
+  const onClickHandler = async () => {
+    const url = await getRandomDog();
+    
+    setUrl(url);
+  };
+
+  useEffect(() => {
+    onClickHandler();
+  }, []);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={onClickHandler}>Click for an new dog picture</button>
+      <span>{url}</span>
+      <img src={url} alt="description of image"/>
     </div>
   );
 }

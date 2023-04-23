@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/https//inmarisol.github.io/inla6/static/css/main.a1c65af7.css",
-    "main.js": "/https//inmarisol.github.io/inla6/static/js/main.29fe0c6c.js",
-    "static/js/787.ca785ad4.chunk.js": "/https//inmarisol.github.io/inla6/static/js/787.ca785ad4.chunk.js",
-    "index.html": "/https//inmarisol.github.io/inla6/index.html",
-    "main.a1c65af7.css.map": "/https//inmarisol.github.io/inla6/static/css/main.a1c65af7.css.map",
-    "main.29fe0c6c.js.map": "/https//inmarisol.github.io/inla6/static/js/main.29fe0c6c.js.map",
-    "787.ca785ad4.chunk.js.map": "/https//inmarisol.github.io/inla6/static/js/787.ca785ad4.chunk.js.map"
+    "main.css": "/inla6/static/css/main.a1c65af7.css",
+    "main.js": "/inla6/static/js/main.84783a7f.js",
+    "static/js/787.ca785ad4.chunk.js": "/inla6/static/js/787.ca785ad4.chunk.js",
+    "index.html": "/inla6/index.html",
+    "main.a1c65af7.css.map": "/inla6/static/css/main.a1c65af7.css.map",
+    "main.84783a7f.js.map": "/inla6/static/js/main.84783a7f.js.map",
+    "787.ca785ad4.chunk.js.map": "/inla6/static/js/787.ca785ad4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1c65af7.css",
-    "static/js/main.29fe0c6c.js"
+    "static/js/main.84783a7f.js"
   ]
 }

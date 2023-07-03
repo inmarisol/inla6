@@ -5,14 +5,14 @@ import { useEffect, useState } from 'react';
 
 const URL = "https://random.dog/woof.json";
 
-const getRandomDog = async () => {
-  const response = await fetch(URL);
-  const body = await response.json();
-  return body.url;
+const getRandomDog = async () => { 
+  const response = await fetch(URL); 
+  const body = await response.json(); 
+  return body.url; 
 }
 
 
-export const App = () => {
+export const App = () => { 
   const [url, setUrl] = useState(null);
 
   const onClickHandler = async () => {
@@ -30,7 +30,7 @@ export const App = () => {
     <div>
       <button onClick={onClickHandler}>Click for an new dog picture</button>
       <span>{url}</span>
-      <img src={url} alt="description of image"/>
+      <img src={url} alt='description of img' />
     </div>
   );
 }
